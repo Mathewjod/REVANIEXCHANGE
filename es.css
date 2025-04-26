@@ -82,7 +82,7 @@ img{
 }
 img.heroimage {
     width: 100vw;
-    height: 53vw;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
     top: 0;
