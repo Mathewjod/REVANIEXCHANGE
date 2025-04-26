@@ -140,6 +140,9 @@ img.heroimage {
         padding-top: 30px;
         
     }
+    .contactcont{
+        flex-direction: column;
+    }
 }
 .collectionscontainer{
     display: flex;
