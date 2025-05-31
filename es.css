@@ -4,13 +4,14 @@
    
 }
 body{
-    background-color: rgb(155, 114, 65);
+    background-color:#CCC4BA;
 }
-img{
+.heroimage{
     width: 100vw;
     height: 53vw;
     object-fit: cover;
 }
+
 .menuitems{
     
     display: flex;
@@ -21,6 +22,7 @@ img{
     margin-right: 500px;
     font-size: 20px;
     z-index: 10;
+    
     
     
 }
@@ -88,6 +90,7 @@ img.heroimage {
     top: 0;
     left: 0;
     z-index: -1;
+    
 }
 @media (max-width:622px){
     .herocontainer {
@@ -241,7 +244,7 @@ button{
 
 }
 .cat h1{
-    color: white;
+    color: rgb(14, 14, 14);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     top: 0;
@@ -250,13 +253,14 @@ button{
 
 }
 .contactcont {
-    color: white;
+    color: rgb(18, 18, 18);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     display: flex;
+    
     margin : 130px;
     gap: 50px;
-}
+} 
 .form1 input{
     margin-bottom: 20px;
     padding: 10px;
@@ -436,7 +440,7 @@ html {
 .bs{
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(17, 17, 17);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
   
@@ -462,7 +466,7 @@ body {
     margin-top:20px;
     padding:10px;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(20, 19, 19);
 }
 
 .bcmain {
@@ -493,6 +497,99 @@ body {
     color: #0070f3;
     font-weight: 500;
 }
+.dot{
+    position:absolute;
+    margin-top: 200px;
+    left: 150px;
+   
+}
+
+.dot img{
+    border-radius: 50px;
+    filter: invert(2);
+    width: 260px;
+    visibility: hidden;
+    
+}
+.dot2{
+     position:absolute;
+    margin-top: 100px;
+    left: 650px;
+}
+.dot2 img{
+    border-radius: 50px;
+    filter: invert(2);
+    width: 200px;
+    visibility: hidden;
+    
+}
+.dot3{
+     position:absolute;
+    margin-top: 180px;
+    left: 1080px;
+}
+.dot3 img{
+    border-radius: 50px;
+    filter: invert(2);
+    width: 240px;
+     visibility: hidden;
+}
+.dot4{
+     position:absolute;
+    margin-top: 130px;
+    left: 140px;
+}
+.dot4 img{
+    border-radius: 50px;
+    filter: invert(2);
+    width: 200px;
+     visibility: hidden;
+}
+.dot5{
+     position:absolute;
+    margin-top: 110px;
+    left: 620px;
+}
+.dot5 img{
+    border-radius: 50px;
+    filter: invert(2);
+    width: 200px;
+     visibility: hidden;
+}
+.dot6{
+     position:absolute;
+    margin-top: 180px;
+    left: 1050px;
+}
+.dot6 img{
+    border-radius: 50px;
+    filter: invert(2);
+    width: 250px;
+     visibility: hidden;
+}
+.p1p{
+    height: 80vh;
+}
+.a1{
+    display: flex;
+    gap: 30px;
+}
+.ap1{
+    margin-left: 90px;
+}
+.row2{
+    display: flex;
+    gap: 30px;
+}
+.r21{
+    margin-left: 90px;
+}
+.ae{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
   
 
 
