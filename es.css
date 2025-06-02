@@ -354,7 +354,7 @@ html {
 }
 .bestseller img{
     width: 20vw;
-    height: 300px;
+    height: 45vh;
 }
 .bs1,.bs2,.bs3,.bs4{
     background-color: white;
@@ -573,7 +573,9 @@ body {
 .a1{
     display: flex;
     gap: 30px;
+    
 }
+
 .ap1{
     margin-left: 90px;
 }
@@ -587,6 +589,40 @@ body {
 .ae{
     text-align: center;
     margin-bottom: 30px;
+}
+@media (max-width:850px){
+    .contactcont{
+        flex-direction: column;
+    }
+
+}
+@media (max-width:600px){
+    .a1{
+        flex-direction: column;
+        margin-left: 90px;
+        
+    }
+    .ap1{
+        margin-left: 0px;
+    }
+    .row2{
+        flex-direction: column;
+        margin-left: 90px;
+    }
+    .r21{
+        margin-left: 0px;
+
+    }
+    .bestseller{
+        flex-direction: column;
+        margin-left: 90px;
+    }
+    .bestseller img{
+        width: 80vw;
+        height: auto;
+    }
+    
+
 }
 
 
