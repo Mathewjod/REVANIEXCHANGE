@@ -19,6 +19,7 @@ body{
    
     right: 0;
     justify-content: center;
+   
     margin-right: 500px;
     font-size: 20px;
     z-index: 10;
@@ -98,22 +99,9 @@ img.heroimage {
         padding-top: 60px;
         
     }
-    .overlay p {
     
-        
-        font-size: 12px;
     
-    }
-    .overlay h1 {
     
-        margin-bottom: 16px;
-        font-size: 30px;
-       
-    }
-    .ctabutton {
-        font-size: 15px;
-        padding: 6px 14px;
-    }
     .menuitems{
         margin-right:35px;
     }
@@ -596,10 +584,10 @@ body {
     }
 
 }
-@media (max-width:600px){
+@media (max-width:800px){
     .a1{
         flex-direction: column;
-        margin-left: 90px;
+        margin-left: 0px;
         
     }
     .ap1{
@@ -607,7 +595,7 @@ body {
     }
     .row2{
         flex-direction: column;
-        margin-left: 90px;
+        margin-left: 0px;
     }
     .r21{
         margin-left: 0px;
@@ -615,7 +603,7 @@ body {
     }
     .bestseller{
         flex-direction: column;
-        margin-left: 90px;
+        margin-left: 0px;
     }
     .bestseller img{
         width: 80vw;
@@ -624,6 +612,50 @@ body {
     
 
 }
+
+
+@media (max-width: 1024px) {
+    .collectionscontainer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .content, .content2, .content3 {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bcmain {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .f2, .f3, .f4 {
+        margin-left: 0;
+    }
+    
+    .a1{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}
+
+
+
 
 
   
