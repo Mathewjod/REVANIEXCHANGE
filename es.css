@@ -498,6 +498,7 @@ body {
     width: 260px;
     visibility: hidden;
     
+    
 }
 .dot2{
      position:absolute;
@@ -510,6 +511,7 @@ body {
     width: 200px;
     visibility: hidden;
     
+    
 }
 .dot3{
      position:absolute;
@@ -520,7 +522,8 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 240px;
-     visibility: hidden;
+    visibility: hidden;
+     
 }
 .dot4{
      position:absolute;
@@ -531,7 +534,8 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 200px;
-     visibility: hidden;
+    visibility: hidden;
+     
 }
 .dot5{
      position:absolute;
@@ -542,7 +546,8 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 200px;
-     visibility: hidden;
+    visibility: hidden;
+    
 }
 .dot6{
      position:absolute;
@@ -553,7 +558,8 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 250px;
-     visibility: hidden;
+    visibility: hidden;
+   
 }
 .p1p{
     height: 80vh;
@@ -653,6 +659,37 @@ body {
         margin-left: 0px;
     }
 }
+@media (max-width: 800px){
+    .dot2{
+     
+     margin-top: 100px;
+     left: 120px;
+    }
+    .dot3{
+    
+    margin-top: 180px;
+    left: 90px;
+    }
+    .dot4{
+    
+    margin-top: 130px;
+    left: 60px;
+    }
+    .dot5{
+    
+    margin-top: 110px;
+    left: 80px;
+    }
+    .dot6{
+     position:absolute;
+    margin-top: 180px;
+    left: 80px;
+}
+}
+
+    
+
+
 
 
 
