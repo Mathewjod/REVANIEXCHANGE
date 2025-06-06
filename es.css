@@ -485,85 +485,52 @@ body {
     color: #0070f3;
     font-weight: 500;
 }
-.dot{
-    position:absolute;
-    margin-top: 200px;
-    left: 150px;
-   
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.dot img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 260px;
-   
-    
-    
+.shirt-container {
+  position: relative;
+  width: 300px; /* adjust based on actual image width */
+  margin: 10px;
 }
-.dot2{
-     position:absolute;
-    margin-top: 100px;
-    left: 650px;
+
+.p1p {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.dot2 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 200px;
-    
-    
-    
+
+.dot {
+  position: absolute;
+  top: 40%;  /* position vertically using percentage */
+  left: 20%; /* position horizontally using percentage */
+  transform: translate(-50%, -50%); /* center the dot */
+  width: 50px;
 }
-.dot3{
-     position:absolute;
-    margin-top: 180px;
-    left: 1080px;
+
+.dot img {
+  width:15vw;
+  border-radius: 20px;
+  filter: invert(1.5);
 }
-.dot3 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 240px;
-    
-     
+.dot1{
+    position: absolute;
+  top: 60%;  /* position vertically using percentage */
+  left: 20%; /* position horizontally using percentage */
+  transform: translate(-50%, -50%); /* center the dot */
+  width: 50px;
+
 }
-.dot4{
-     position:absolute;
-    margin-top: 130px;
-    left: 140px;
+.dot1 img {
+  width:15vw;
+  border-radius: 20px;
+  filter: invert(1.5);
 }
-.dot4 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 200px;
-    
-     
-}
-.dot5{
-     position:absolute;
-    margin-top: 110px;
-    left: 620px;
-}
-.dot5 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 200px;
-    
-    
-}
-.dot6{
-     position:absolute;
-    margin-top: 180px;
-    left: 1050px;
-}
-.dot6 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 250px;
-    
-   
-}
-.p1p{
-    height: 80vh;
-}
+
 .a1{
     display: flex;
     gap: 30px;
@@ -659,39 +626,7 @@ body {
         margin-left: 0px;
     }
 }
-@media (max-width: 800px){
-    .dot{
-    
-    top: 1850px;
-    left: 70px;
-   
-    }
-    .dot2{
-     
-     top: 2500px;
-     left: 105px;
-    }
-    .dot3{
-    
-    top: 3100px;
-    left: 90px;
-    }
-    .dot4{
-    
-    top: 3700px;
-    left: 50px;
-    }
-    .dot5{
-    
-    top: 4350px;
-    left: 80px;
-    }
-    .dot6{
-     position:absolute;
-    top: 4950px;
-    left: 60px;
-}
-}
+
 
     
 
