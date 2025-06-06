@@ -246,9 +246,19 @@ button{
 
     display: flex;
     
-    margin : 130px;
+    
+    margin-bottom: 130px;
+    margin-left: 130px;
+    margin-top: 130px;
     gap: 50px;
 } 
+@media(max-width:800px){
+    .contactcont {
+         margin-left: 40px;
+
+
+    }
+}
 .form1 input{
     margin-bottom: 20px;
     padding: 10px;
@@ -485,82 +495,46 @@ body {
     color: #0070f3;
     font-weight: 500;
 }
-.dot{
-    position:absolute;
-    margin-top: 200px;
-    left: 150px;
-   
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.dot img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 260px;
-   
-    
-    
+.shirt-container {
+  position: relative;
+  
+  margin: 10px;
+  
 }
-.dot2{
-     position:absolute;
-    margin-top: 100px;
-    left: 650px;
+.shirt-container img{
+    gap: 30px;
 }
-.dot2 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 200px;
-    
-    
-    
+
+.p1p {
+  
+  height: 80vh;
+  display:flex;
+  
 }
-.dot3{
-     position:absolute;
-    margin-top: 180px;
-    left: 1080px;
+
+.dot {
+  position: absolute;
+  top: 60%;  /* position vertically using percentage */
+  left: 50%; /* position horizontally using percentage */
+  transform: translate(-50%, -50%); /* center the dot */
+  width: 300px;
 }
-.dot3 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 240px;
-    
-     
+
+.dot img {
+  width: 80%;
+  height: 60vh;
+  
+  filter: invert(1.5);
 }
-.dot4{
-     position:absolute;
-    margin-top: 130px;
-    left: 140px;
-}
-.dot4 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 200px;
-    
-     
-}
-.dot5{
-     position:absolute;
-    margin-top: 110px;
-    left: 620px;
-}
-.dot5 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 200px;
-    
-    
-}
-.dot6{
-     position:absolute;
-    margin-top: 180px;
-    left: 1050px;
-}
-.dot6 img{
-    border-radius: 50px;
-    filter: invert(2);
-    width: 250px;
-    
-   
-}
+
+
 .p1p{
     height: 80vh;
 }
@@ -612,7 +586,7 @@ body {
         margin-left: 0px;
     }
     .bestseller img{
-        width: 80vw;
+        width: 100%;
         height: auto;
     }
     
@@ -659,41 +633,7 @@ body {
         margin-left: 0px;
     }
 }
-@media (max-width: 800px){
-    .dot{
-    
-    top: 1850px;
-    left: 70px;
-   
-    }
-    .dot2{
-     
-     top: 2500px;
-     left: 105px;
-    }
-    .dot3{
-    
-    top: 3100px;
-    left: 90px;
-    }
-    .dot4{
-    
-    top: 3700px;
-    left: 50px;
-    }
-    .dot5{
-    
-    top: 4350px;
-    left: 80px;
-    }
-    .dot6{
-     position:absolute;
-    top: 4950px;
-    left: 80px;
-}
-}
 
-    
 
 
 
