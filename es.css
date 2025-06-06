@@ -496,7 +496,7 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 260px;
-    visibility: hidden;
+   
     
     
 }
@@ -509,7 +509,7 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 200px;
-    visibility: hidden;
+    
     
     
 }
@@ -522,7 +522,7 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 240px;
-    visibility: hidden;
+    
      
 }
 .dot4{
@@ -534,7 +534,7 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 200px;
-    visibility: hidden;
+    
      
 }
 .dot5{
@@ -546,7 +546,7 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 200px;
-    visibility: hidden;
+    
     
 }
 .dot6{
@@ -558,7 +558,7 @@ body {
     border-radius: 50px;
     filter: invert(2);
     width: 250px;
-    visibility: hidden;
+    
    
 }
 .p1p{
