@@ -660,30 +660,36 @@ body {
     }
 }
 @media (max-width: 800px){
+    .dot{
+    
+    top: 1850px;
+    left: 70px;
+   
+    }
     .dot2{
      
-     margin-top: 100px;
-     left: 120px;
+     top: 2500px;
+     left: 105px;
     }
     .dot3{
     
-    margin-top: 180px;
+    top: 3100px;
     left: 90px;
     }
     .dot4{
     
-    margin-top: 130px;
-    left: 60px;
+    top: 3700px;
+    left: 50px;
     }
     .dot5{
     
-    margin-top: 110px;
+    top: 4350px;
     left: 80px;
     }
     .dot6{
      position:absolute;
-    margin-top: 180px;
-    left: 80px;
+    top: 4950px;
+    left: 60px;
 }
 }
 
