@@ -12,31 +12,68 @@ body{
     object-fit: cover;
 }
 
-.menuitems{
+.navbar {
+    position: fixed;
     
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.menuitems {
     display: flex;
-    position: absolute;
-   
-    right: 0;
-    justify-content: center;
-   
-    margin-right: 500px;
-    font-size: 20px;
-    z-index: 10;
+    gap: 20px;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(12px); 
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    list-style: none;
     
+}
+@media(max-width:800px)
+{
+    .menuitems{
+        padding: 0px 0px;
+        padding-right: 5px;
+       
+        
+    }
     
     
 }
+@media(max-width:500px)
+{
+    
+    .menuitems li a{
+        font-size: 10px;
+    }
+    
+}
+.logo{
+    z-index: 1000;
+    height: 50px;
+    
+}
+.logo img{
+    top: 0;
+    left: 0;    
+}
 
-.menuitems a{
+.menuitems a {
     text-decoration: none;
-    padding: 40px;
     
-    color: rgb(17, 16, 16);
-    font-size:25px;
-    
-
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
+
+.menuitems a:hover {
+    color: #865555;
+}
+
+
 .menuitems li{
     list-style: none;
     
@@ -93,47 +130,14 @@ img.heroimage {
     z-index: -1;
     
 }
-@media (max-width:622px){
-    .herocontainer {
-        
-        padding-top: 60px;
-        
-    }
-    
-    
-    
-    .menuitems{
-        margin-right:35px;
-    }
-    .menuitems a{
-        font-size: 18px;
-
-    }
-    
-
-}
-@media (max-width:520px){
-    .menuitems a{
-        padding: 30px;
-    }
-}
-@media (max-width:460px){
-    .menuitems a{
-        padding: 25px;
-    }
-}
 @media (max-width:427px){
-    .menuitems a{
-        padding: 20px;
-    }
+    
     .herocontainer {
         
         padding-top: 30px;
         
     }
-    .contactcont{
-        flex-direction: column;
-    }
+    
 }
 .collectionscontainer{
     display: flex;
@@ -255,8 +259,6 @@ button{
 @media(max-width:800px){
     .contactcont {
          margin-left: 40px;
-
-
     }
 }
 .form1 input{
@@ -521,9 +523,9 @@ body {
 
 .dot {
   position: absolute;
-  top: 60%;  /* position vertically using percentage */
-  left: 50%; /* position horizontally using percentage */
-  transform: translate(-50%, -50%); /* center the dot */
+  top: 60%;  
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   width: 300px;
 }
 
@@ -532,6 +534,7 @@ body {
   height: 60vh;
   
   filter: invert(1.5);
+  visibility: hidden;
 }
 
 
@@ -633,15 +636,3 @@ body {
         margin-left: 0px;
     }
 }
-
-
-
-
-
-
-
-
-  
-
-
-
