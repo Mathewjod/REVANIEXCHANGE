@@ -42,14 +42,9 @@ body{
     
     
 }
-@media(max-width:500px)
-{
+
     
-    .menuitems li a{
-        font-size: 10px;
-    }
-    
-}
+
 .logo{
     z-index: 1000;
     height: 50px;
