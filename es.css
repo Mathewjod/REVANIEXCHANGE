@@ -517,20 +517,49 @@ body {
 
 .dot {
   position: absolute;
-  top: 60%;  
+  top: 35%;  
   left: 50%; 
   transform: translate(-50%, -50%); 
   width: 300px;
 }
-
 .dot img {
   width: 80%;
-  height: 60vh;
+  height: 40vh;
   
   filter: invert(1.5);
   visibility: hidden;
+  
 }
+.dot2{
+    position: absolute;
+  top:84%;  
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 300px;
 
+}
+.dot2 img {
+  width: 80%;
+  height: 25vh;
+  
+  filter: invert(1.5);
+
+}
+.dot3{
+    position: absolute;
+  top:75%;  
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 300px;
+
+}
+.dot3 img {
+  width: 80%;
+  height: 40vh;
+  
+  filter: invert(1.5);
+
+}
 
 .p1p{
     height: 80vh;
