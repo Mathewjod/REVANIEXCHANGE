@@ -543,6 +543,7 @@ body {
   height: 25vh;
   
   filter: invert(1.5);
+  visibility: hidden;
 
 }
 .dot3{
@@ -558,6 +559,8 @@ body {
   height: 40vh;
   
   filter: invert(1.5);
+  visibility: hidden;
+    
 
 }
 
