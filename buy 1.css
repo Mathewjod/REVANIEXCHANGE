@@ -1,0 +1,92 @@
+#back{
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.preview{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+    border: 2px outset;
+    padding: 30px;
+    margin-right: 300px;
+}
+form{
+    margin-left: 70px;
+}
+#head{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.rad{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+#sixfive{
+    margin-left: 90px;
+    margin-bottom: 17px;
+}
+#sevenfive{
+    margin-left: 154px;
+}
+#subm{
+    border: 2px outset black;
+    padding: 3px;
+    margin-right: 270px;
+    margin-top: 12px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+    .img-zoom{
+      width: 450px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #ccc;
+    }
+
+    #productImage{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.2s ease;
+      transform: scale(1);
+    }
+
+    .img-zoom:hover #productImage {
+      transform: scale(2);
+    }
+@media(max-width: 768px) {
+        .preview{
+            display: block;
+            margin-left: 0px;
+            padding-left: 0px;
+            margin: 0px;
+        }
+        form{
+            margin-left: 20px;   
+        }
+        #back{
+            margin-bottom: 0px;
+        }
+        .pree{
+            display: flex;
+        }
+        #productImage{
+            width: 400px;
+        }
+        .img-zoom{
+      width: 450px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+      border: 0PX;
+    }
+    }
