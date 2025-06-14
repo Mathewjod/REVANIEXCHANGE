@@ -1,67 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Buy Now</title>
+  <link rel="stylesheet" href="buy 1.css" />
 </head>
-<link rel="stylesheet" href="buy 1.css">
 <body>
-    <div class="topbar">
-        <a href="index.html" class="back">
-        <img src="aep2.jpg">
-        </a>
+  <div class="topbar">
+    <a href="index.html" class="back"><img src="aep2.jpg" alt="Logo" /></a>
+  </div>
+
+  <div class="preview">
+    <div class="img-zoom" id="img-zoom">
+      <img id="productImage" src="" alt="Selected Product" width="300">
     </div>
-    <div class="preview">
-      <div class="img-zoom" id="img-zoom">
-          <img id="productImage" src="" alt="Selected Product" width="300">
-          </div>
-          <form>
-            <label id="head">Select Size </label><br><br>
-            <input type="radio" id="six" value="6" name="sz">
-            <label class="rad" for="six">37</label>
-            <input type="radio" id="sixfive" value="UK 6.5" name="sz" required >
-            <label class="rad" for="sixfive">38</label><br>
-            <input type="radio" id="seven" value="UK 7" name="sz">
-            <label class="rad" for="seven">39</label>
-            <input type="radio" id="sevenfive" value="UK 7.5" name="sz">
-            <label class="rad" for="sevenfive">40</label><br><br>
-            <label id="head">Payment Details</label><br><br>
-            <label class="rad" for="cnum">Card Number <sub><sub>(The 16 digits on the front of your card)</sub></sub> </label><br><br>
-            <input type="number" id="cnum" required placeholder="Enter card number" style="width: 330px;"><br><br>
-            <label class="rad" for="date">Expiry Date: </label>
-            <input type="date" id="date" required><br><br>
-            <label class="rad" for="cv">CVV2/CVC2: </label>
-            <input type="number" id="cv" required placeholder="3 digits on back" style="width: 110px;"><br><br>
-            <button onclick="showPopup()" style="cursor: pointer; color: rgb(82, 82, 82);font-weight: bold;" id="subm">Submit</button>
-          </form>
-    </div>
+
+    <form id="payment-form">
+      <label id="head">Select Size </label><br><br>
+      <input type="radio" id="six" value="6" name="sz">
+      <label class="rad" for="six">37</label>
+      <input type="radio" id="sixfive" value="UK 6.5" name="sz">
+      <label class="rad" for="sixfive">38</label><br>
+      <input type="radio" id="seven" value="UK 7" name="sz">
+      <label class="rad" for="seven">39</label>
+      <input type="radio" id="sevenfive" value="UK 7.5" name="sz">
+      <label class="rad" for="sevenfive">40</label><br><br>
+
+      <label id="head">Payment Details</label><br><br>
+      <label class="rad" for="cnum">Card Number <sub><sub>(16 digits on card)</sub></sub></label><br><br>
+      <input type="number" id="cnum" required placeholder="Enter card number" style="width: 330px;"><br><br>
+
+      <label class="rad" for="date">Expiry Date:</label>
+      <input type="date" id="date" required><br><br>
+
+      <label class="rad" for="cv">CVV2/CVC2:</label>
+      <input type="number" id="cv" required placeholder="3 digits on back" style="width: 110px;"><br><br>
+
+      <button type="submit" style="cursor: pointer; color: rgb(82, 82, 82);font-weight: bold;" id="subm">Submit</button>
+    </form>
+  </div>
+
   <script>
-    function showPopup() {
-      alert("Your Order was Placed!!!");
-    }
+    
     const params = new URLSearchParams(window.location.search);
     const imageName = params.get('image');
     const imageElement = document.getElementById('productImage');
 
     if (imageName) {
-      imageElement.src =imageName;
+      imageElement.src = imageName;
     } else {
       imageElement.alt = 'No product selected';
     }
 
-     const container = document.getElementById('img-zoom');
-    const image = document.getElementById('productImage');
-
+    const container = document.getElementById('img-zoom');
     container.addEventListener('mousemove', function (e) {
       const rect = container.getBoundingClientRect();
       const x = ((e.clientX - rect.left) / rect.width) * 100;
       const y = ((e.clientY - rect.top) / rect.height) * 100;
-      image.style.transformOrigin = `${x}% ${y}%`;
+      imageElement.style.transformOrigin = `${x}% ${y}%`;
     });
 
     container.addEventListener('mouseleave', function () {
-      image.style.transformOrigin = 'center center';
+      imageElement.style.transformOrigin = 'center center';
+    });
+
+    
+    document.getElementById("payment-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const selectedSize = document.querySelector('input[name="sz"]:checked');
+      const cardNumber = document.getElementById("cnum").value;
+      const expiry = document.getElementById("date").value;
+      const cvv = document.getElementById("cv").value;
+
+      if (!selectedSize) {
+        alert("Please select a shoe size.");
+        return;
+      }
+
+      if (cardNumber.length !== 16) {
+        alert("Card number must be 16 digits.");
+        return;
+      }
+
+      if (cvv.length !== 3) {
+        alert("CVV must be 3 digits.");
+        return;
+      }
+
+      alert("Your Order was Placed!!!");
+      alert("Payment successful! Thank you for shopping with Aura Essentials.");
+      window.location.href = "index.html";
     });
   </script>
 </body>
